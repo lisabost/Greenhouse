@@ -1,3 +1,5 @@
+package rooms;
+
 import planters.Planter;
 import planters.VegetablePlanter;
 import plants.Seed;
@@ -48,7 +50,7 @@ public class VegRoom extends Room implements VegetableState {
      */
     public static VegRoom getInstance() {
         if (instance == null) {
-            instance = new VegRoom("Vegetable Room", "You stand at the west side of a small square room. " +
+            instance = new VegRoom("Vegetable rooms.Room", "You stand at the west side of a small square room. " +
                     "The walls are made entirely of dirty and dingy glass windows. \nThe north and east sides of the room are lined with rows of" +
                     "wooden planter boxes. \nThere is a small table in the center of the room it holds some boxes, full looking bags, and paper.");
         }
@@ -102,7 +104,7 @@ public class VegRoom extends Room implements VegetableState {
      * @param input string choice from player
      */
     @Override
-    void onInput(String input) {
+    public void onInput(String input) {
         switch (state) {
             case START_STATE:
                 inputOnStart(input);

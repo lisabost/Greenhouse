@@ -1,4 +1,6 @@
-public interface FruitState {
+package rooms;
+
+public interface VegetableState {
 
     /**
      * Sets state to player is looking at the table
@@ -31,16 +33,16 @@ public interface FruitState {
     String LOOK_AT_PLANTS = "LOOK_AT_PLANTS";
 
     /**
-     * For tomatoSeedState
-     * Sets state to player has a tomato seed
+     * For onionSeedState
+     * Sets state to player has an onion seed
      */
-    String HAVE_TOMATO_SEED = "HAVE_TOMATO_SEED";
+    String HAVE_ONION_SEED = "HAVE_ONION_SEED";
 
     /**
-     * For tomatoSeedState
-     * Sets state to player does not have a tomato seed
+     * For onionSeedState
+     * Sets state to player does not have an onion seed
      */
-    String NO_TOMATO_SEED = "NO_TOMATO_SEED";
+    String NO_ONION_SEED = "NO_ONION_SEED";
 
     /**
      * For fertilizerState

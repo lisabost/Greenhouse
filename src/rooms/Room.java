@@ -1,3 +1,5 @@
+package rooms;
+
 /**
  * This abstract class controls what is needed to make a room
  */
@@ -20,8 +22,9 @@ public abstract class Room {
     public Room getNextRoom() {
         return this;
     }
-    abstract String getInteraction();
 
-    abstract void onInput(String input);
+    public abstract String getInteraction();
+
+    public abstract void onInput(String input);
 }
 

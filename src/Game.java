@@ -1,5 +1,7 @@
 import reader.KeyboardReader;
 import reader.Reader;
+import rooms.Hallway;
+import rooms.Room;
 import writer.ConsoleWriter;
 import writer.Writer;
 

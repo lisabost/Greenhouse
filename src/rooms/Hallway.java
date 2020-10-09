@@ -1,5 +1,7 @@
+package rooms;
+
 /**
- * This implementation of the Room class is the hallway the player starts out in. It controls what room the player is going to enter at the beginning of the game.
+ * This implementation of the rooms.Room class is the hallway the player starts out in. It controls what room the player is going to enter at the beginning of the game.
  */
 public class Hallway extends Room {
 

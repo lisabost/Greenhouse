@@ -1,3 +1,5 @@
+package rooms;
+
 import planters.FruitPlanter;
 import planters.Planter;
 import plants.FruitSeed;
@@ -40,7 +42,7 @@ public class FruitRoom extends Room implements FruitState {
      */
     public static FruitRoom getInstance() {
         if(instance == null) {
-            instance = new FruitRoom("Fruit Room", "You stand at the east side of a small square room. The walls are entirely made " +
+            instance = new FruitRoom("Fruit rooms.Room", "You stand at the east side of a small square room. The walls are entirely made " +
                     "of glass windows \nand there are wooden planter boxes that line the east and south walls. There" +
                     "is a small table \nin the center of the room that holds several boxes and a few stacks of papers.");
         }
@@ -93,7 +95,7 @@ public class FruitRoom extends Room implements FruitState {
      * @param input player's choice
      */
     @Override
-    void onInput(String input) {
+    public void onInput(String input) {
         switch (state) {
             case START_STATE:
                 inputOnStart(input);
